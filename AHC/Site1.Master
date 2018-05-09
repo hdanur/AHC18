@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="AHC.Site1Master" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title><%: Page.Title %> American Health Connection </title>
+        <style type="text/css">
+        .auto-style2 {
+            text-decoration: none;
+        }
+
+            .auto-style3 {
+                position: fixed;
+                left: 10px;
+                top: 15px;
+                width: 1470px;
+            }
+
+        </style>
+   
+</head>
+<body>
+    
+    <%--<form id="form1" runat="server">--%>
+    <br /> 
+    <div class="auto-style2"  runat="server"  style="background-color: #339933; color:white; font-weight:bold; vertical-align:middle; padding-left:5%; width:94%">
+        <a runat="server" style="color: #ffffff; font-size:medium; text-align:center;" class="auto-style2" href="Achdefault.aspx"> 
+         <asp:Image runat="server" ImageUrl="~/Image/Capture AHC image2.PNG" Height="35px" Width="40px" BackColor="#339933" BorderColor="#339933" BorderWidth="5px" ForeColor="#339933" ImageAlign="Middle" ValidateRequestMode="Disabled" /> 
+        &nbsp; American Health Connection Inc.</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            <a runat="server" style="color: #ffffff; font-size: medium" href="Home.aspx" class="auto-style2">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a runat="server" style="color: #ffffff; font-size: medium" href="Individualand.aspx" class="auto-style2">Individual and Family</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a runat="server" style="color: #ffffff; font-size: medium" href="Medicare.aspx" class="auto-style2">Medicare</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a runat="server" style="color: #ffffff; font-size: medium" href="SmallBusiness.aspx" class="auto-style2">Small Businesses</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a runat="server" style="color: #ffffff; font-size:small" href="Login.aspx" class="auto-style2"><i>Log In</i></a>&nbsp;&nbsp;&nbsp;<i> or </i>&nbsp;&nbsp;&nbsp;
+                <a runat="server" style="color: #ffffff; font-size:small"  href="Sign in.aspx" class="auto-style2"><i>Create an Account</i></a>     
+
+            </div>
+
+    
+    
+ <!--Footer Section-->
+    <div class="container body-content" style="text-align: left">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+        <hr/>
+
+        <!--Main Video-->
+        
+
+        <footer>
+            <div  style="text-align:center; font-style:italic; text-space-collapse:collapse; font-size:12px">
+                   <p> <a href="Achdefault.aspx" class="auto-style2" style="color:forestgreen">Contact Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="Home.aspx" class="auto-style2" style="color:forestgreen">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <a href="Individualand.aspx" class="auto-style2" style="color:forestgreen">Individual and Family</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <a href="Medicare.aspx" class="auto-style2" style="color:forestgreen">Medicare</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <a href="SmallBusiness.aspx" class="auto-style2" style="color:forestgreen">Small Business</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <a style="color:forestgreen">Career</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <a style="color:forestgreen">Support</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   </p>
+            </div>
+            <hr />
+            <p>&copy; <%: DateTime.Now.Year %> - AHC.Inc.</p>
+        </footer>
+    </div>
+  
+    
+  
+</body>
+</html>
+
+    
